@@ -14,7 +14,7 @@ export class AppController {
     return `Hello ${name} Async`;
   }
 
-  @EventPattern('greeting-async')
+  @EventPattern('book-created')
   async handleBookCreatedEvent(data: Record<string, unknown>) {
     console.log(data);
   }
